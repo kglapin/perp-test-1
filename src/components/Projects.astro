@@ -1,0 +1,45 @@
+---
+const projects = [
+  { title: 'Dom jednorodzinny – Kraków', category: 'Budownictwo', year: '2024', size: '180 m²', color: 'from-orange-400 to-red-500' },
+  { title: 'Remont apartamentu – Warszawa', category: 'Remont', year: '2024', size: '95 m²', color: 'from-blue-400 to-indigo-500' },
+  { title: 'Biuro – centrum Poznania', category: 'Komercja', year: '2023', size: '320 m²', color: 'from-green-400 to-teal-500' },
+  { title: 'Osiedle 12 domów – Wrocław', category: 'Deweloper', year: '2023', size: '2400 m²', color: 'from-purple-400 to-pink-500' },
+  { title: 'Restauracja – Gdańsk', category: 'Gastronomia', year: '2023', size: '210 m²', color: 'from-yellow-400 to-orange-500' },
+  { title: 'Hala magazynowa – Łódź', category: 'Przemysł', year: '2022', size: '1800 m²', color: 'from-cyan-400 to-blue-500' },
+];
+---
+
+<section id="realizacje" class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center mb-16">
+      <span class="text-primary-600 font-semibold text-sm uppercase tracking-widest">Portfolio</span>
+      <h2 class="font-heading text-4xl md:text-5xl font-black text-gray-900 mt-3 mb-4">
+        Nasze Realizacje
+      </h2>
+      <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+        Każdy projekt to historia współpracy, zaufania i doskonałego wykonania.
+      </p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {projects.map((p) => (
+        <div class="group relative rounded-2xl overflow-hidden cursor-pointer">
+          <div class={`h-64 bg-gradient-to-br ${p.color} flex items-end p-6`}>
+            <div class="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300"></div>
+            <div class="relative z-10">
+              <span class="bg-white/20 backdrop-blur-sm text-white text-xs font-medium px-3 py-1 rounded-full">
+                {p.category}
+              </span>
+              <h3 class="font-heading text-xl font-bold text-white mt-3">{p.title}</h3>
+              <div class="flex gap-4 mt-2 text-white/80 text-sm">
+                <span>{p.year}</span>
+                <span>•</span>
+                <span>{p.size}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

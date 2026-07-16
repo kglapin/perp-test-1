@@ -1,0 +1,63 @@
+---
+---
+<section id="o-nas" class="py-24 bg-dark-900 text-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <!-- Left -->
+      <div>
+        <span class="text-primary-500 font-semibold text-sm uppercase tracking-widest">O firmie</span>
+        <h2 class="font-heading text-4xl md:text-5xl font-black mt-3 mb-6 leading-tight">
+          Budujemy <span class="text-primary-500">od 2009 roku</span>
+        </h2>
+        <p class="text-gray-300 text-lg leading-relaxed mb-6">
+          BudMaster to firma z wieloletnią tradycją i pasją do tworzenia trwałych, pięknych przestrzeni. 
+          Nasz zespół składa się z doświadczonych specjalistów, którzy traktują każdy projekt indywidualnie.
+        </p>
+        <p class="text-gray-400 leading-relaxed mb-8">
+          Wierzymy, że budowanie to nie tylko stawianie ścian — to tworzenie miejsca, w którym ludzie żyją, 
+          pracują i realizują swoje marzenia. Dlatego przykładamy wagę do każdego detalu.
+        </p>
+
+        <div class="grid grid-cols-2 gap-6">
+          {[
+            { icon: '🏆', title: 'Jakość gwarantowana', desc: '5-letnia gwarancja na wszystkie prace' },
+            { icon: '⏱️', title: 'Terminowość', desc: 'Dotrzymujemy ustalonych terminów' },
+            { icon: '💰', title: 'Przejrzyste ceny', desc: 'Brak ukrytych kosztów' },
+            { icon: '🤝', title: 'Pełna obsługa', desc: 'Od projektu po odbiór budynku' },
+          ].map(item => (
+            <div class="flex gap-4 items-start">
+              <span class="text-2xl">{item.icon}</span>
+              <div>
+                <div class="font-semibold text-white">{item.title}</div>
+                <div class="text-gray-400 text-sm">{item.desc}</div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <!-- Right - Visual card -->
+      <div class="relative">
+        <div class="bg-gradient-to-br from-primary-600 to-primary-900 rounded-3xl p-10 text-center">
+          <div class="font-heading text-8xl font-black text-white/20 leading-none">15+</div>
+          <div class="font-heading text-3xl font-black text-white -mt-4">Lat na rynku</div>
+          <div class="mt-8 space-y-4">
+            {[
+              { label: 'Realizacje mieszkaniowe', value: '340+' },
+              { label: 'Projekty komercyjne', value: '120+' },
+              { label: 'Klienci powracający', value: '78%' },
+            ].map(item => (
+              <div class="flex justify-between items-center bg-white/10 rounded-xl px-5 py-3">
+                <span class="text-white/80 text-sm">{item.label}</span>
+                <span class="font-bold text-white">{item.value}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+        <!-- Decorative element -->
+        <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-primary-500/20 rounded-full blur-2xl"></div>
+        <div class="absolute -top-4 -left-4 w-32 h-32 bg-orange-500/10 rounded-full blur-3xl"></div>
+      </div>
+    </div>
+  </div>
+</section>

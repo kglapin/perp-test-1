@@ -1,0 +1,52 @@
+---
+---
+<nav class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-20">
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-3">
+        <div class="w-10 h-10 bg-primary-600 rounded-lg flex items-center justify-center">
+          <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+          </svg>
+        </div>
+        <span class="font-heading text-2xl font-bold text-gray-900">Bud<span class="text-primary-600">Master</span></span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#uslugi" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Usługi</a>
+        <a href="#realizacje" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Realizacje</a>
+        <a href="#o-nas" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">O nas</a>
+        <a href="#opinie" class="text-gray-600 hover:text-primary-600 font-medium transition-colors">Opinie</a>
+        <a href="#kontakt" class="bg-primary-600 hover:bg-primary-700 text-white px-6 py-2.5 rounded-lg font-semibold transition-colors">
+          Bezpłatna wycena
+        </a>
+      </div>
+
+      <!-- Mobile hamburger -->
+      <button id="menu-btn" class="md:hidden p-2 rounded-lg text-gray-600 hover:bg-gray-100">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <div class="flex flex-col gap-3">
+        <a href="#uslugi" class="text-gray-600 hover:text-primary-600 font-medium py-2">Usługi</a>
+        <a href="#realizacje" class="text-gray-600 hover:text-primary-600 font-medium py-2">Realizacje</a>
+        <a href="#o-nas" class="text-gray-600 hover:text-primary-600 font-medium py-2">O nas</a>
+        <a href="#opinie" class="text-gray-600 hover:text-primary-600 font-medium py-2">Opinie</a>
+        <a href="#kontakt" class="bg-primary-600 text-white px-6 py-3 rounded-lg font-semibold text-center">Bezpłatna wycena</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script>
+  const btn = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  btn?.addEventListener('click', () => menu?.classList.toggle('hidden'));
+</script>

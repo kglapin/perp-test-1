@@ -1,0 +1,78 @@
+---
+const services = [
+  {
+    icon: '🏗️',
+    title: 'Budownictwo ogólne',
+    description: 'Kompleksowa realizacja budynków mieszkalnych i komercyjnych. Od projektu po klucz.',
+    features: ['Domy jednorodzinne', 'Budynki wielorodzinne', 'Obiekty komercyjne'],
+  },
+  {
+    icon: '🔨',
+    title: 'Remonty i modernizacje',
+    description: 'Profesjonalne remonty mieszkań, domów i biur. Kompleksowe lub częściowe.',
+    features: ['Remonty mieszkań', 'Modernizacje łazienek', 'Adaptacje przestrzeni'],
+  },
+  {
+    icon: '🏠',
+    title: 'Wykończenia wnętrz',
+    description: 'Precyzyjne wykończenia według projektu lub Twojego pomysłu.',
+    features: ['Tynki i gładzie', 'Układanie płytek', 'Podłogi i sufity'],
+  },
+  {
+    icon: '⚡',
+    title: 'Instalacje',
+    description: 'Kompleksowe instalacje elektryczne, hydrauliczne i HVAC.',
+    features: ['Instalacje elektryczne', 'Hydraulika', 'Ogrzewanie i klimatyzacja'],
+  },
+  {
+    icon: '🏢',
+    title: 'Elewacje i dachy',
+    description: 'Profesjonalne wykonanie elewacji budynków i pokryć dachowych.',
+    features: ['Elewacje tynkowane', 'Dachy skośne i płaskie', 'Ocieplenia'],
+  },
+  {
+    icon: '🌿',
+    title: 'Prace zewnętrzne',
+    description: 'Zagospodarowanie terenu, ogrodzenia, podjazdy i tarasy.',
+    features: ['Kostka brukowa', 'Ogrodzenia', 'Tarasy i balkony'],
+  },
+];
+---
+
+<section id="uslugi" class="py-24 bg-gray-50">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <!-- Header -->
+    <div class="text-center mb-16">
+      <span class="text-primary-600 font-semibold text-sm uppercase tracking-widest">Co oferujemy</span>
+      <h2 class="font-heading text-4xl md:text-5xl font-black text-gray-900 mt-3 mb-4">
+        Nasze Usługi
+      </h2>
+      <p class="text-gray-500 text-lg max-w-2xl mx-auto">
+        Oferujemy pełen zakres usług budowlanych. Jeden wykonawca — zero problemów z koordynacją.
+      </p>
+    </div>
+
+    <!-- Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+      {services.map((service) => (
+        <div class="bg-white rounded-2xl p-8 shadow-sm hover:shadow-xl transition-all duration-300 group border border-gray-100 hover:border-primary-100">
+          <div class="text-5xl mb-5">{service.icon}</div>
+          <h3 class="font-heading text-xl font-bold text-gray-900 mb-3 group-hover:text-primary-600 transition-colors">
+            {service.title}
+          </h3>
+          <p class="text-gray-500 mb-5 leading-relaxed">{service.description}</p>
+          <ul class="space-y-2">
+            {service.features.map(f => (
+              <li class="flex items-center gap-2 text-sm text-gray-600">
+                <svg class="w-4 h-4 text-primary-500 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+                </svg>
+                {f}
+              </li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
