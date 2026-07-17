@@ -1,0 +1,42 @@
+/* Seamless infinite marquee below the hero */
+.proof-marquee {
+  overflow: hidden;
+}
+
+.proof-track {
+  display: flex;
+  align-items: center;
+  gap: 0 !important;
+  width: max-content;
+  min-width: max-content;
+  padding: 1.15rem 0;
+  animation: proof-marquee-loop 30s linear infinite !important;
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+}
+
+.proof-track > span,
+.proof-track > i {
+  flex: 0 0 auto;
+  margin-right: clamp(2.75rem, 6vw, 7rem);
+}
+
+@keyframes proof-marquee-loop {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (max-width: 800px) {
+  .proof-track {
+    animation-duration: 22s !important;
+  }
+
+  .proof-track > span,
+  .proof-track > i {
+    margin-right: clamp(2rem, 9vw, 3.5rem);
+  }
+}
