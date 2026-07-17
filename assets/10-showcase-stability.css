@@ -1,0 +1,83 @@
+/* Stable rendering for the sections following the horizontal services story */
+
+/* The previous decorative level illustration was too abstract and is intentionally removed. */
+.level-tool {
+  display: none !important;
+}
+
+.detail-lab,
+.projects {
+  position: relative;
+  z-index: 3;
+  isolation: isolate;
+  overflow: visible;
+}
+
+.detail-lab {
+  background: var(--paper);
+}
+
+.detail-intro,
+.detail-grid,
+.projects-head,
+.project-row {
+  position: relative;
+  z-index: 2;
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* These sections must not depend on an observer firing after a long sticky sequence. */
+.detail-lab .reveal-up,
+.detail-lab .reveal-lines,
+.projects .reveal-up,
+.projects .reveal-lines {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+.detail-lab .image-reveal-scroll,
+.projects .image-reveal-scroll {
+  visibility: visible !important;
+  opacity: 1 !important;
+  clip-path: none !important;
+  transform: none !important;
+}
+
+.detail-lab .image-reveal-scroll img,
+.projects .image-reveal-scroll img {
+  opacity: 1 !important;
+  transform: scale(1.04) !important;
+}
+
+.detail-grid {
+  align-items: start;
+}
+
+.projects {
+  overflow: hidden;
+}
+
+.project-row:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 800px) {
+  .detail-lab,
+  .projects {
+    overflow: hidden;
+  }
+
+  .detail-grid,
+  .project-row,
+  .project-row--reverse {
+    transform: none !important;
+  }
+
+  .detail-lab .image-reveal-scroll img,
+  .projects .image-reveal-scroll img {
+    transform: none !important;
+  }
+}
