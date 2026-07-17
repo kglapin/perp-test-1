@@ -27,6 +27,30 @@ jobs:
       - name: Configure Pages
         uses: actions/configure-pages@v5
 
+      - name: Prepare versioned static assets
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+
+          path = Path('index.html')
+          html = path.read_text(encoding='utf-8')
+          version = '20260717-contact-v4'
+
+          html = html.replace(
+              'href="./assets/styles.css"',
+              f'href="./assets/styles.css?v={version}"'
+          )
+
+          contact_link = f'    <link rel="stylesheet" href="./assets/07-contact-panel.css?v={version}" />\n'
+          if '07-contact-panel.css?v=' not in html:
+              html = html.replace(
+                  '    <script>document.documentElement.classList.remove(\'no-js\');</script>',
+                  contact_link + '    <script>document.documentElement.classList.remove(\'no-js\');</script>'
+              )
+
+          path.write_text(html, encoding='utf-8')
+          PY
+
       - name: Upload static site
         uses: actions/upload-pages-artifact@v3
         with:
