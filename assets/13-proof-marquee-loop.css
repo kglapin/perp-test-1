@@ -10,15 +10,30 @@
   width: max-content;
   min-width: max-content;
   padding: 1.15rem 0;
-  animation: proof-marquee-loop 30s linear infinite !important;
+  animation: proof-marquee-loop 38s linear infinite !important;
+  animation-play-state: running !important;
   will-change: transform;
   transform: translate3d(0, 0, 0);
 }
 
-.proof-track > span,
+/*
+ * The markup contains two identical sets of four labels.
+ * Each half must be at least as wide as the viewport; otherwise a blank gap
+ * appears before the duplicated set reaches the right edge.
+ */
+.proof-track > span {
+  flex: 0 0 max(25vw, 16rem);
+  box-sizing: border-box;
+  padding-inline: clamp(1.5rem, 3vw, 3.5rem);
+  text-align: center;
+  white-space: nowrap;
+}
+
 .proof-track > i {
-  flex: 0 0 auto;
-  margin-right: clamp(2.75rem, 6vw, 7rem);
+  flex: 0 0 .4rem;
+  width: .4rem;
+  height: .4rem;
+  margin-right: max(2vw, 1.5rem);
 }
 
 @keyframes proof-marquee-loop {
@@ -32,11 +47,15 @@
 
 @media (max-width: 800px) {
   .proof-track {
-    animation-duration: 22s !important;
+    animation-duration: 28s !important;
   }
 
-  .proof-track > span,
+  .proof-track > span {
+    flex-basis: max(70vw, 15rem);
+    padding-inline: 1.5rem;
+  }
+
   .proof-track > i {
-    margin-right: clamp(2rem, 9vw, 3.5rem);
+    margin-right: max(7vw, 1.5rem);
   }
 }
