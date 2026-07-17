@@ -1,15 +1,17 @@
-/* High-contrast contact form panel */
+/* Strongly separated contact form panel */
 .contact-layout {
   align-items: start;
 }
 
 .contact-form {
   position: relative;
-  padding: clamp(1.75rem, 3.2vw, 3.5rem);
-  background: var(--paper-light);
-  color: var(--ink);
-  border: 1px solid rgba(255, 255, 255, .2);
-  box-shadow: 0 2rem 5rem rgba(0, 0, 0, .28);
+  padding: clamp(2rem, 3.4vw, 3.75rem);
+  background: var(--terracotta);
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, .28);
+  box-shadow:
+    0 0 0 10px rgba(184, 95, 63, .16),
+    0 2.4rem 6rem rgba(0, 0, 0, .42);
 }
 
 .contact-form::before {
@@ -17,68 +19,69 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding: .65rem .8rem;
-  background: var(--terracotta);
-  color: #fff;
+  padding: .7rem .9rem;
+  background: var(--ink);
+  color: var(--paper-light);
   font-size: .52rem;
   font-weight: 700;
   letter-spacing: .14em;
 }
 
 .contact-form label {
-  gap: .7rem;
+  gap: .72rem;
 }
 
 .contact-form label span {
-  color: rgba(17, 17, 15, .58);
+  color: rgba(255, 255, 255, .84);
   font-weight: 700;
 }
 
 .contact-form input,
 .contact-form textarea {
-  min-height: 3.4rem;
-  padding: .85rem 1rem;
-  border: 1px solid rgba(17, 17, 15, .22);
-  background: rgba(17, 17, 15, .035);
+  min-height: 3.55rem;
+  padding: .9rem 1rem;
+  border: 1px solid rgba(255, 255, 255, .92);
+  background: #fff;
   color: var(--ink);
+  box-shadow: none;
   transition: border-color 220ms ease, background 220ms ease, box-shadow 220ms ease;
 }
 
 .contact-form textarea {
-  min-height: 8.5rem;
+  min-height: 9rem;
 }
 
 .contact-form input:hover,
 .contact-form textarea:hover {
-  border-color: rgba(17, 17, 15, .46);
+  border-color: var(--ink);
 }
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: var(--terracotta);
+  border-color: var(--ink);
   background: #fff;
-  box-shadow: 0 0 0 3px rgba(184, 95, 63, .12);
+  box-shadow: 0 0 0 4px rgba(17, 17, 15, .16);
 }
 
 .form-submit {
-  min-height: 4.3rem;
-  margin-top: .5rem;
-  padding: 0 1.3rem;
-  border: 1px solid var(--terracotta);
-  background: var(--terracotta);
-  color: #fff;
+  min-height: 4.4rem;
+  margin-top: .65rem;
+  padding: 0 1.35rem;
+  border: 1px solid var(--ink);
+  background: var(--ink);
+  color: var(--paper-light);
   transition: background 240ms ease, color 240ms ease, border-color 240ms ease;
 }
 
 .form-submit:hover,
 .form-submit:focus-visible {
-  background: var(--ink);
-  border-color: var(--ink);
-  color: var(--paper-light);
+  background: var(--paper-light);
+  border-color: var(--paper-light);
+  color: var(--ink);
 }
 
 .form-status {
-  color: rgba(17, 17, 15, .64);
+  color: rgba(255, 255, 255, .82);
 }
 
 @media (max-width: 800px) {
@@ -88,7 +91,10 @@
 
   .contact-form {
     margin-top: 0;
-    padding: 3.2rem 1.25rem 1.5rem;
+    padding: 3.4rem 1.25rem 1.6rem;
+    box-shadow:
+      0 0 0 6px rgba(184, 95, 63, .18),
+      0 1.8rem 4rem rgba(0, 0, 0, .34);
   }
 
   .contact-form::before {
