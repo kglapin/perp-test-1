@@ -1,0 +1,208 @@
+.precision-story {
+  position: relative;
+  height: 420vh;
+  background: var(--paper-light);
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.precision-sticky {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(25rem, 0.65fr);
+  overflow: hidden;
+}
+
+.precision-visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  border-right: 1px solid var(--line);
+  background: #d9d3ca;
+  overflow: hidden;
+}
+
+.precision-visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(90deg, transparent 0 11.95%, rgba(17, 17, 15, 0.06) 12% 12.08%);
+}
+
+.precision-surface {
+  position: relative;
+  width: min(68vw, 55rem);
+  aspect-ratio: 1.45;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 3px;
+  background: #8f8981;
+  box-shadow: 0 2.5rem 6rem rgba(17, 17, 15, 0.18);
+  transform: perspective(1200px) rotateX(3deg) rotateY(-5deg);
+}
+
+.tile {
+  background:
+    linear-gradient(130deg, rgba(255,255,255,.55), transparent 35%),
+    radial-gradient(circle at 30% 20%, rgba(255,255,255,.72), transparent 40%),
+    #e7e2da;
+  border: 1px solid rgba(255,255,255,.5);
+}
+
+.tile-b,
+.tile-c {
+  background:
+    linear-gradient(320deg, rgba(255,255,255,.45), transparent 40%),
+    radial-gradient(circle at 65% 65%, rgba(190,183,173,.35), transparent 35%),
+    #ded8cf;
+}
+
+.laser-line {
+  position: absolute;
+  z-index: 5;
+  top: 0;
+  left: 42%;
+  width: 1px;
+  height: 100%;
+  background: #ef2a2a;
+  box-shadow: 0 0 10px rgba(239, 42, 42, 0.9);
+  transform-origin: top center;
+}
+
+.dimension {
+  position: absolute;
+  z-index: 6;
+  color: var(--ink);
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+}
+
+.dimension::before,
+.dimension::after {
+  content: "";
+  position: absolute;
+  background: currentColor;
+}
+
+.dimension-x {
+  left: 0;
+  bottom: -2.4rem;
+  width: 100%;
+  text-align: center;
+  border-top: 1px solid currentColor;
+}
+
+.dimension-y {
+  right: -3.5rem;
+  top: 0;
+  height: 100%;
+  writing-mode: vertical-rl;
+  text-align: center;
+  border-left: 1px solid currentColor;
+}
+
+.precision-marker {
+  position: absolute;
+  z-index: 7;
+  top: 1.2rem;
+  right: 1.2rem;
+  padding: 0.45rem 0.6rem;
+  background: var(--ink);
+  color: #fff;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+}
+
+.precision-copy {
+  position: relative;
+  padding: 8rem clamp(2rem, 4vw, 5rem) 4rem;
+  background: var(--paper-light);
+}
+
+.precision-step {
+  position: absolute;
+  left: clamp(2rem, 4vw, 5rem);
+  right: clamp(2rem, 4vw, 5rem);
+  top: 50%;
+  transform: translateY(-40%);
+  opacity: 0;
+  visibility: hidden;
+}
+
+.precision-step.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.precision-step > span {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+  color: var(--terracotta);
+}
+
+.precision-step h3 {
+  margin: 0 0 1.5rem;
+  font-size: clamp(2.5rem, 4.5vw, 5rem);
+  font-weight: 500;
+  line-height: 0.95;
+  letter-spacing: -0.055em;
+}
+
+.precision-step p {
+  max-width: 29rem;
+  margin: 0;
+  color: rgba(17, 17, 15, 0.65);
+  font-size: clamp(1rem, 1.2vw, 1.18rem);
+}
+
+.problem {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+.problem-title {
+  grid-column: 3 / 11;
+}
+
+.problem-list {
+  grid-column: 3 / 13;
+  margin-top: clamp(4rem, 8vw, 8rem);
+}
+
+.problem-item {
+  display: grid;
+  grid-template-columns: 4rem minmax(16rem, 1fr) minmax(18rem, 1fr);
+  gap: 2rem;
+  align-items: baseline;
+  padding: 2rem 0;
+  border-top: 1px solid var(--line-light);
+}
+
+.problem-item:last-child {
+  border-bottom: 1px solid var(--line-light);
+}
+
+.problem-item > span {
+  color: var(--terracotta);
+  font-size: 0.65rem;
+  letter-spacing: 0.12em;
+}
+
+.problem-item h3 {
+  margin: 0;
+  font-size: clamp(1.6rem, 2.6vw, 2.7rem);
+  font-weight: 500;
+  letter-spacing: -0.045em;
+}
+
+.problem-item p {
+  margin: 0;
+  max-width: 35rem;
+  color: rgba(255,255,255,.58);
+}

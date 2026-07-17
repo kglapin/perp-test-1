@@ -1,35 +1,34 @@
-# BudMaster - Strona firmowa w Astro JS
+# MILIMETR — pracownia glazurnicza
 
-Nowoczesna strona internetowa dla firmy budowlanej zbudowana w **Astro JS** z **Tailwind CSS**.
+Koncepcyjna, storytellingowa strona firmy glazurniczej zbudowana jako szybki statyczny serwis dla GitHub Pages.
 
-## Stack technologiczny
+## Technologia
 
-- **Astro 4.x** - framework
-- **Tailwind CSS** - stylowanie
-- **GitHub Pages** - hosting (auto-deploy)
+- semantyczny HTML5,
+- autorski CSS bez frameworka UI,
+- GSAP + ScrollTrigger ładowane z CDN,
+- progressive enhancement: treść pozostaje dostępna bez JavaScriptu,
+- osobne zachowanie ruchu na desktopie i mobile,
+- obsługa `prefers-reduced-motion`.
 
-## Sekcje strony
+## Przed publikacją
 
-- 🦸 **Hero** - nagłówek z CTA i statystykami
-- 🔧 **Usługi** - 6 kategorii usług budowlanych
-- 🏗️ **Realizacje** - portfolio projektów
-- 🏢 **O nas** - historia i wartości firmy
-- ⭐ **Opinie** - testimoniale klientów
-- 📞 **Kontakt** - formularz + dane kontaktowe
-- 🦶 **Stopka** - linki i informacje prawne
+Należy zastąpić:
 
-## Uruchomienie lokalne
+1. roboczą nazwę `MILIMETR`,
+2. numer telefonu i adres e-mail,
+3. obszar działania,
+4. stockowe zdjęcia prawdziwymi realizacjami,
+5. demonstracyjną opinię prawdziwą rekomendacją,
+6. formularz demonstracyjny docelowym endpointem,
+7. metadane Open Graph i politykę prywatności.
+
+## Lokalne uruchomienie
+
+Projekt nie wymaga procesu budowania:
 
 ```bash
-npm install
-npm run dev
+python3 -m http.server 8080
 ```
 
-## Deploy
-
-Auto-deploy na GitHub Pages po każdym pushu do `main`.
-Wymagane: **Settings → Pages → Source: GitHub Actions**
-
-## Live URL
-
-https://kglapin.github.io/perp-test-1
+Następnie otwórz `http://localhost:8080`.
