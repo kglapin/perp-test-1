@@ -1,0 +1,98 @@
+/* High-contrast contact form panel */
+.contact-layout {
+  align-items: start;
+}
+
+.contact-form {
+  position: relative;
+  padding: clamp(1.75rem, 3.2vw, 3.5rem);
+  background: var(--paper-light);
+  color: var(--ink);
+  border: 1px solid rgba(255, 255, 255, .2);
+  box-shadow: 0 2rem 5rem rgba(0, 0, 0, .28);
+}
+
+.contact-form::before {
+  content: "FORMULARZ / ZAPYTANIE";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: .65rem .8rem;
+  background: var(--terracotta);
+  color: #fff;
+  font-size: .52rem;
+  font-weight: 700;
+  letter-spacing: .14em;
+}
+
+.contact-form label {
+  gap: .7rem;
+}
+
+.contact-form label span {
+  color: rgba(17, 17, 15, .58);
+  font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+  min-height: 3.4rem;
+  padding: .85rem 1rem;
+  border: 1px solid rgba(17, 17, 15, .22);
+  background: rgba(17, 17, 15, .035);
+  color: var(--ink);
+  transition: border-color 220ms ease, background 220ms ease, box-shadow 220ms ease;
+}
+
+.contact-form textarea {
+  min-height: 8.5rem;
+}
+
+.contact-form input:hover,
+.contact-form textarea:hover {
+  border-color: rgba(17, 17, 15, .46);
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: var(--terracotta);
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(184, 95, 63, .12);
+}
+
+.form-submit {
+  min-height: 4.3rem;
+  margin-top: .5rem;
+  padding: 0 1.3rem;
+  border: 1px solid var(--terracotta);
+  background: var(--terracotta);
+  color: #fff;
+  transition: background 240ms ease, color 240ms ease, border-color 240ms ease;
+}
+
+.form-submit:hover,
+.form-submit:focus-visible {
+  background: var(--ink);
+  border-color: var(--ink);
+  color: var(--paper-light);
+}
+
+.form-status {
+  color: rgba(17, 17, 15, .64);
+}
+
+@media (max-width: 800px) {
+  .contact-layout {
+    gap: 4rem;
+  }
+
+  .contact-form {
+    margin-top: 0;
+    padding: 3.2rem 1.25rem 1.5rem;
+  }
+
+  .contact-form::before {
+    left: 0;
+    right: auto;
+  }
+}
