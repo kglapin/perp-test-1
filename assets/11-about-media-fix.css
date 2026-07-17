@@ -1,0 +1,48 @@
+/* About section — keep the left-side image permanently visible */
+.about {
+  position: relative;
+  isolation: isolate;
+}
+
+.about-media,
+.about-media.image-reveal-scroll {
+  display: block !important;
+  min-height: 100svh;
+  margin: 0;
+  overflow: hidden;
+  visibility: visible !important;
+  opacity: 1 !important;
+  clip-path: none !important;
+  transform: none !important;
+  background: #8f5a47;
+}
+
+.about-media img,
+.about-media.image-reveal-scroll img {
+  display: block !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: 100svh;
+  object-fit: cover;
+  object-position: center;
+  visibility: visible !important;
+  opacity: .8 !important;
+  clip-path: none !important;
+  transform: scale(1.02) !important;
+  filter: grayscale(1) contrast(1.08);
+  mix-blend-mode: multiply;
+}
+
+@media (max-width: 800px) {
+  .about-media,
+  .about-media.image-reveal-scroll,
+  .about-media img,
+  .about-media.image-reveal-scroll img {
+    min-height: 62svh;
+  }
+
+  .about-media img,
+  .about-media.image-reveal-scroll img {
+    transform: none !important;
+  }
+}
