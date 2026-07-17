@@ -1,0 +1,71 @@
+/* Services section — stable heading and horizontal stage rendering */
+.services {
+  position: relative;
+  background: var(--paper);
+  isolation: isolate;
+}
+
+.services-head {
+  position: relative;
+  z-index: 3;
+  min-height: min(78svh, 58rem);
+  align-content: center;
+  background: var(--paper);
+  overflow: visible;
+}
+
+.services-head .eyebrow,
+.services-head .display-heading {
+  position: relative;
+  z-index: 2;
+}
+
+.services-head .display-heading {
+  max-width: 86rem;
+  visibility: visible !important;
+  opacity: 1 !important;
+  text-wrap: balance;
+}
+
+/* This heading must never remain hidden if a scroll-triggered reveal is interrupted. */
+.services-head .display-heading .reveal-line {
+  overflow: visible !important;
+}
+
+.services-head .display-heading .reveal-line > span {
+  transform: none !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.services-stage {
+  position: relative;
+  z-index: 2;
+  min-height: 100svh;
+  background: var(--paper-light);
+  overflow: hidden;
+}
+
+.services-track {
+  position: relative;
+  min-height: 100svh;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+
+@media (max-width: 800px) {
+  .services-head {
+    min-height: auto;
+    align-content: initial;
+  }
+
+  .services-stage,
+  .services-track {
+    min-height: 0;
+  }
+
+  .services-track {
+    transform: none !important;
+    will-change: auto;
+  }
+}
