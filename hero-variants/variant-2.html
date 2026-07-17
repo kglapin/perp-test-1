@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#ebe6dc">
+  <title>Wariant 02 — Animated Layered Collage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body class="preview-page preview-collage">
+  <nav class="variant-switcher variant-switcher--dark" aria-label="Warianty hero">
+    <a class="switcher-brand" href="./index.html">MILIMETR / HERO LAB</a>
+    <div><a href="./variant-1.html">01</a><a class="is-active" href="./variant-2.html">02</a><a href="./variant-3.html">03</a></div>
+  </nav>
+
+  <main>
+    <section class="demo-hero collage-hero" data-collage-hero>
+      <div class="collage-grid" aria-hidden="true"></div>
+      <header class="demo-header demo-header--dark">
+        <a class="preview-brand preview-brand--dark" href="../"><span>MILIMETR</span><small>pracownia glazurnicza</small></a>
+        <span class="edition">Hero study / 02</span>
+        <a class="outline-link outline-link--dark" href="#next">Omów realizację ↘</a>
+      </header>
+
+      <div class="collage-copy">
+        <p class="kicker hero-kicker">Geometria precyzji</p>
+        <h1>Różnica<br><span>mieści się</span><br><em>w milimetrach.</em></h1>
+        <p class="collage-lead">Gotowa przestrzeń, proces i detal pojawiają się jednocześnie — jak trzy warstwy tej samej decyzji.</p>
+      </div>
+
+      <div class="collage-stage" data-depth-root>
+        <figure class="collage-image collage-image--main" data-depth="0.8">
+          <img src="https://images.unsplash.com/photo-1552321554-5fefe8c9ef14?auto=format&fit=crop&w=1800&q=88" alt="Nowoczesna łazienka z jasnymi płytkami">
+          <figcaption><span>Realizacja 01</span><span>Wielki format / 1200 × 600</span></figcaption>
+        </figure>
+        <figure class="collage-image collage-image--detail" data-depth="1.35">
+          <img src="https://images.unsplash.com/photo-1584622781564-1d987f7333c1?auto=format&fit=crop&w=900&q=88" alt="Detal ceramicznej powierzchni">
+          <figcaption>Detal / 45°</figcaption>
+        </figure>
+        <figure class="collage-image collage-image--process" data-depth="1.7">
+          <img src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=900&q=88" alt="Rzemieślnik podczas precyzyjnej pracy">
+          <figcaption>Proces / pomiar</figcaption>
+        </figure>
+        <div class="floating-coordinate" data-depth="2.1">X 1240<br>Y 0860</div>
+        <div class="collage-cross" data-depth="1.9"></div>
+      </div>
+
+      <div class="collage-bottom">
+        <span>Porusz kursorem</span>
+        <a href="#next">Scroll / 01 <i>↓</i></a>
+      </div>
+    </section>
+
+    <section class="after-hero after-hero--light" id="next">
+      <p>Wariant 02</p>
+      <h2>Najwięcej głębi bez wideo.<br><em>Każda warstwa ma znaczenie.</em></h2>
+      <a href="./variant-3.html">Następny wariant — 03 ↗</a>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>

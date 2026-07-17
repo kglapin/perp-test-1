@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#11110f">
+  <title>Wariant 01 — Cinematic Video Hero</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+<body class="preview-page preview-video">
+  <nav class="variant-switcher" aria-label="Warianty hero">
+    <a class="switcher-brand" href="./index.html">MILIMETR / HERO LAB</a>
+    <div><a class="is-active" href="./variant-1.html">01</a><a href="./variant-2.html">02</a><a href="./variant-3.html">03</a></div>
+  </nav>
+
+  <main>
+    <section class="demo-hero video-hero" data-video-hero>
+      <div class="video-stage">
+        <video class="hero-video" autoplay muted loop playsinline poster="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=2200&q=85">
+          <source src="https://videos.pexels.com/video-files/4729640/4729640-uhd_2560_1440_30fps.mp4" type="video/mp4">
+        </video>
+        <div class="video-fallback" aria-hidden="true"></div>
+        <div class="video-wash"></div>
+        <div class="technical-grid"></div>
+        <div class="scan-line"></div>
+      </div>
+
+      <header class="demo-header">
+        <a class="preview-brand" href="../"><span>MILIMETR</span><small>pracownia glazurnicza</small></a>
+        <span class="edition">Hero study / 01</span>
+        <a class="outline-link" href="#next">Omów realizację ↘</a>
+      </header>
+
+      <div class="video-copy">
+        <p class="kicker hero-kicker">Precyzyjne realizacje glazurnicze</p>
+        <h1 class="kinetic-title">
+          <span><b>Różnica</b></span>
+          <span class="title-shift"><b>mieści się</b></span>
+          <span class="serif-row"><b>w milimetrach.</b></span>
+        </h1>
+        <div class="video-bottom-copy">
+          <p>Każde ujęcie pokazuje etap, którego nie widać w gotowym wnętrzu — ale od którego zależy jego trwałość.</p>
+          <a href="#next">Zobacz ideę <i>↓</i></a>
+        </div>
+      </div>
+
+      <aside class="shot-list" aria-label="Sekwencja filmu">
+        <span class="is-active"><i>01</i> Pomiar</span>
+        <span><i>02</i> Podział</span>
+        <span><i>03</i> Montaż</span>
+        <span><i>04</i> Detal</span>
+      </aside>
+
+      <div class="video-measure" aria-hidden="true"><span>00</span><i></i><span>1000 MM</span></div>
+    </section>
+
+    <section class="after-hero" id="next">
+      <p>Wariant 01</p>
+      <h2>Film buduje atmosferę.<br><em>Typografia utrzymuje markę.</em></h2>
+      <a href="./variant-2.html">Następny wariant — 02 ↗</a>
+    </section>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="./assets/app.js"></script>
+</body>
+</html>
