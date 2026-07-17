@@ -1,0 +1,110 @@
+/* Unified scroll system — no dynamic GSAP pin spacers */
+html {
+  scroll-behavior: auto !important;
+}
+
+body {
+  overflow-anchor: none;
+}
+
+section[id] {
+  scroll-margin-top: 4.75rem;
+}
+
+.hero-process-shell,
+.precision-story,
+.services,
+.services-stage {
+  overflow-anchor: none;
+}
+
+.hero-process,
+.precision-sticky,
+.services-track {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.services-head {
+  min-height: auto !important;
+  align-content: initial !important;
+  overflow: visible !important;
+}
+
+.services-head .display-heading,
+.services-head .display-heading .reveal-line,
+.services-head .display-heading .reveal-line > span {
+  visibility: visible !important;
+}
+
+@media (min-width: 801px) {
+  .services-stage {
+    position: relative;
+    min-height: 100svh;
+    overflow: clip;
+    background: var(--paper-light);
+  }
+
+  .services-track {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: max-content;
+    height: 100svh;
+    min-height: 100svh;
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    will-change: transform;
+  }
+
+  .service-panel {
+    flex: 0 0 68vw;
+    height: 100svh;
+  }
+
+  .service-panel--intro {
+    flex-basis: 36vw;
+  }
+}
+
+@media (max-width: 800px) {
+  .services-stage {
+    height: auto !important;
+    min-height: 0 !important;
+    overflow: visible;
+  }
+
+  .services-track {
+    position: relative;
+    top: auto;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    display: block;
+    transform: none !important;
+    will-change: auto;
+  }
+
+  .service-panel,
+  .service-panel--intro {
+    width: 100%;
+    min-width: 0;
+    height: 75svh;
+  }
+
+  .service-panel--intro {
+    height: auto;
+    min-height: 28rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-process-copy,
+  .hero-process-image img,
+  .precision-surface,
+  .precision-marker,
+  .services-track,
+  [data-parallax] img {
+    transform: none !important;
+  }
+}
