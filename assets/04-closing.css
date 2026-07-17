@@ -1,0 +1,328 @@
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100svh;
+  background: var(--terracotta);
+  color: #fff;
+}
+
+.about-media {
+  min-height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.about-media img {
+  filter: grayscale(1) contrast(1.08);
+  mix-blend-mode: multiply;
+  opacity: .78;
+}
+
+.about-copy {
+  padding: var(--section-space) var(--gutter);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-copy .display-heading {
+  font-size: clamp(3rem, 5.5vw, 6.4rem);
+}
+
+.about-lead {
+  max-width: 36rem;
+  margin: 3rem 0 0;
+  font-size: clamp(1rem, 1.35vw, 1.25rem);
+  color: rgba(255,255,255,.78);
+}
+
+.about-principles {
+  margin-top: clamp(3rem, 7vw, 7rem);
+}
+
+.about-principles p {
+  display: grid;
+  grid-template-columns: 3rem 1fr;
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem 0;
+  border-top: 1px solid rgba(255,255,255,.28);
+  font-size: .82rem;
+}
+
+.about-principles p:last-child { border-bottom: 1px solid rgba(255,255,255,.28); }
+.about-principles span { opacity: .55; }
+
+.testimonial {
+  min-height: 90svh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.testimonial blockquote {
+  max-width: 83rem;
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(3.4rem, 7.2vw, 7.8rem);
+  font-style: italic;
+  line-height: .94;
+  letter-spacing: -.045em;
+}
+
+.testimonial-meta {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
+  font-size: .65rem;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.faq {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  border-top: 1px solid var(--line);
+}
+
+.faq-heading {
+  grid-column: 1 / 6;
+}
+
+.faq-heading .display-heading {
+  font-size: clamp(3rem, 5.4vw, 6rem);
+}
+
+.faq-list {
+  grid-column: 7 / 13;
+}
+
+.faq details {
+  border-top: 1px solid var(--line);
+}
+
+.faq details:last-child { border-bottom: 1px solid var(--line); }
+
+.faq summary {
+  position: relative;
+  padding: 1.5rem 3rem 1.5rem 0;
+  list-style: none;
+  cursor: pointer;
+  font-size: clamp(1.05rem, 1.55vw, 1.3rem);
+  font-weight: 600;
+}
+
+.faq summary::-webkit-details-marker { display: none; }
+
+.faq summary span,
+.faq summary span::after {
+  position: absolute;
+  right: .2rem;
+  top: 50%;
+  width: 1rem;
+  height: 1px;
+  background: currentColor;
+  content: "";
+  transition: transform 250ms ease;
+}
+
+.faq summary span::after { right: 0; top: 0; transform: rotate(90deg); }
+.faq details[open] summary span::after { transform: rotate(0); }
+
+.faq details p {
+  max-width: 39rem;
+  margin: 0;
+  padding: 0 3rem 1.8rem 0;
+  color: rgba(17,17,15,.62);
+}
+
+.contact {
+  position: relative;
+  min-height: 100svh;
+  padding: var(--section-space) var(--gutter);
+  background: var(--ink);
+  color: var(--paper-light);
+  overflow: hidden;
+}
+
+.contact-grid { color: #fff; }
+
+.contact-head,
+.contact-layout {
+  position: relative;
+  z-index: 2;
+  width: min(100%, var(--content-max));
+  margin-inline: auto;
+}
+
+.contact-title {
+  max-width: 79rem;
+  margin: 0;
+  font-size: clamp(4rem, 8.6vw, 9.3rem);
+  font-weight: 500;
+  line-height: .85;
+  letter-spacing: -.07em;
+}
+
+.contact-layout {
+  margin-top: clamp(5rem, 10vw, 10rem);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(3rem, 10vw, 10rem);
+}
+
+.contact-direct p {
+  max-width: 31rem;
+  margin: 0 0 3rem;
+  color: rgba(255,255,255,.62);
+}
+
+.contact-direct a {
+  display: block;
+  width: fit-content;
+  margin: .4rem 0;
+  font-family: var(--serif);
+  font-size: clamp(2rem, 3.5vw, 4rem);
+  font-style: italic;
+  line-height: 1.1;
+}
+
+.contact-direct small {
+  display: block;
+  max-width: 25rem;
+  margin-top: 2rem;
+  color: rgba(255,255,255,.38);
+}
+
+.contact-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem 1.5rem;
+}
+
+.contact-form label {
+  display: grid;
+  gap: .6rem;
+}
+
+.contact-form label:nth-child(4) { grid-column: 1 / -1; }
+
+.contact-form label span {
+  font-size: .62rem;
+  text-transform: uppercase;
+  letter-spacing: .11em;
+  color: rgba(255,255,255,.56);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid rgba(255,255,255,.32);
+  border-radius: 0;
+  background: transparent;
+  color: #fff;
+  outline: none;
+  padding: .7rem 0;
+  resize: vertical;
+  transition: border-color 250ms ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus { border-color: #fff; }
+
+.form-submit {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1.35rem 0;
+  border: 0;
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-size: .75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.form-submit i { font-style: normal; font-size: 1.2rem; }
+.form-status { grid-column: 1 / -1; margin: 0; font-size: .8rem; color: rgba(255,255,255,.65); }
+
+.site-footer {
+  position: relative;
+  padding: 4rem var(--gutter) 1rem;
+  background: var(--paper);
+  overflow: hidden;
+}
+
+.footer-top {
+  position: relative;
+  z-index: 2;
+  width: min(100%, var(--content-max));
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 3rem;
+  padding-bottom: 4rem;
+  border-bottom: 1px solid var(--line);
+}
+
+.brand--footer { color: var(--ink); }
+
+.footer-top nav {
+  display: flex;
+  gap: 2rem;
+  font-size: .7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+}
+
+.footer-top > p {
+  justify-self: end;
+  margin: 0;
+  text-align: right;
+  color: rgba(17,17,15,.6);
+  font-size: .8rem;
+}
+
+.footer-bottom {
+  position: relative;
+  z-index: 2;
+  width: min(100%, var(--content-max));
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-top: 1rem;
+  font-size: .58rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.footer-word {
+  margin-top: 7rem;
+  margin-bottom: -0.18em;
+  text-align: center;
+  font-size: clamp(5rem, 17.5vw, 18rem);
+  font-weight: 600;
+  line-height: .68;
+  letter-spacing: -.08em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+
+:focus-visible {
+  outline: 2px solid var(--terracotta);
+  outline-offset: 4px;
+}

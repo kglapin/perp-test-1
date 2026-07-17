@@ -1,0 +1,247 @@
+.detail-lab {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+.detail-intro {
+  grid-column: 3 / 11;
+}
+
+.detail-grid {
+  grid-column: 1 / 13;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  margin-top: clamp(5rem, 10vw, 10rem);
+}
+
+.detail-card {
+  position: relative;
+  grid-column: 8 / 13;
+  aspect-ratio: 1 / 1.1;
+  margin: 0;
+}
+
+.detail-card--large {
+  grid-column: 1 / 8;
+  grid-row: 1 / 3;
+  aspect-ratio: 1 / 1.15;
+}
+
+.detail-card figcaption {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-top: 0.8rem;
+  border-top: 1px solid var(--line);
+  font-size: 0.64rem;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+}
+
+.detail-card img {
+  height: calc(100% - 2.5rem);
+}
+
+.detail-note {
+  grid-column: 8 / 13;
+  align-self: end;
+  padding: 3rem;
+  background: var(--terracotta);
+  color: #fff;
+}
+
+.detail-number {
+  display: block;
+  font-family: var(--serif);
+  font-size: clamp(6rem, 11vw, 12rem);
+  line-height: .75;
+}
+
+.detail-note p {
+  max-width: 26rem;
+  margin: 3rem 0 0;
+}
+
+.detail-quote {
+  grid-column: 2 / 8;
+  padding: 4rem 0 0;
+}
+
+.detail-quote blockquote {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: clamp(2.8rem, 5vw, 5.5rem);
+  font-style: italic;
+  line-height: 1;
+  letter-spacing: -0.035em;
+}
+
+.detail-quote p {
+  margin: 2rem 0 0;
+  font-size: .65rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.projects {
+  padding-bottom: var(--section-space);
+  background: var(--ink);
+  color: var(--paper-light);
+}
+
+.projects-head {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+.projects-head .eyebrow,
+.projects-head .display-heading {
+  grid-column: 3 / 11;
+}
+
+.projects-head .eyebrow { margin-bottom: 0; }
+
+.project-row {
+  width: min(100%, var(--content-max));
+  margin: 0 auto clamp(7rem, 13vw, 13rem);
+  padding-inline: var(--gutter);
+  display: grid;
+  grid-template-columns: 4fr 8fr;
+  gap: clamp(2rem, 6vw, 7rem);
+  align-items: end;
+}
+
+.project-row--reverse {
+  grid-template-columns: 8fr 4fr;
+}
+
+.project-row--reverse .project-meta {
+  order: 2;
+}
+
+.project-row--reverse .project-media {
+  order: 1;
+}
+
+.project-meta > span {
+  color: var(--terracotta);
+  font-size: 0.65rem;
+  letter-spacing: .12em;
+}
+
+.project-meta h3 {
+  margin: 1rem 0 4rem;
+  font-size: clamp(2.5rem, 4.6vw, 5rem);
+  font-weight: 500;
+  line-height: .96;
+  letter-spacing: -.055em;
+}
+
+.project-meta dl {
+  margin: 0;
+}
+
+.project-meta dl > div {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 1rem;
+  padding: .7rem 0;
+  border-top: 1px solid var(--line-light);
+  font-size: .68rem;
+  text-transform: uppercase;
+  letter-spacing: .08em;
+}
+
+.project-meta dt { opacity: .5; }
+.project-meta dd { margin: 0; }
+
+.project-media {
+  height: min(74vh, 49rem);
+  margin: 0;
+  overflow: hidden;
+}
+
+.project-media img {
+  transform: scale(1.08);
+  filter: saturate(.78);
+}
+
+.process {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+}
+
+.process-intro {
+  grid-column: 3 / 11;
+}
+
+.process-layout {
+  position: relative;
+  grid-column: 4 / 12;
+  margin-top: clamp(5rem, 10vw, 10rem);
+}
+
+.process-line {
+  position: absolute;
+  left: 1.2rem;
+  top: 0;
+  bottom: 0;
+  width: 1px;
+  background: var(--line);
+}
+
+.process-line span {
+  position: absolute;
+  inset: 0;
+  background: var(--terracotta);
+  transform: scaleY(0);
+  transform-origin: top center;
+}
+
+.process-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.process-step {
+  display: grid;
+  grid-template-columns: 5rem 1fr;
+  gap: 1.5rem;
+  padding: 0 0 clamp(4rem, 8vw, 8rem);
+  opacity: .32;
+  transition: opacity 400ms ease;
+}
+
+.process-step:last-child { padding-bottom: 0; }
+.process-step.is-active { opacity: 1; }
+
+.process-step > span {
+  position: relative;
+  z-index: 2;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  background: var(--paper);
+  border: 1px solid var(--line);
+  font-size: .62rem;
+}
+
+.process-step h3 {
+  margin: 0 0 1rem;
+  font-size: clamp(2rem, 3.4vw, 3.7rem);
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: -.05em;
+}
+
+.process-step p {
+  max-width: 36rem;
+  margin: 0;
+  color: rgba(17,17,15,.62);
+}
