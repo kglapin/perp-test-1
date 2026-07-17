@@ -1,0 +1,32 @@
+/* Variant 03 — refined editorial placement for the supporting copy */
+.process-copy > p:last-child {
+  align-self: flex-end;
+  margin: 0 clamp(1rem, 3vw, 3rem) 0 0;
+  max-width: 390px;
+  padding-left: 1.15rem;
+  border-left: 1px solid rgba(255, 255, 255, .42);
+  color: rgba(255, 255, 255, .78);
+  font-size: clamp(.82rem, .82vw, .94rem);
+  line-height: 1.65;
+  text-wrap: balance;
+}
+
+@media (max-width: 720px) {
+  .process-copy {
+    padding-bottom: 9rem;
+  }
+
+  .process-copy h1 {
+    margin-bottom: 1.35rem;
+  }
+
+  .process-copy > p:last-child {
+    align-self: flex-end;
+    width: min(82vw, 310px);
+    margin: 0;
+    max-width: none;
+    padding-left: 1rem;
+    font-size: .8rem;
+    line-height: 1.58;
+  }
+}
