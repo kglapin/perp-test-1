@@ -1,0 +1,134 @@
+kground .18s ease,border .18s ease}.choice input:checked+label{background:var(--foam);border-color:var(--foam)}.choice input:focus-visible+label{outline:3px solid var(--forest);outline-offset:2px}
+    .fields{display:grid;gap:14px}.field{display:grid;gap:7px}.field label{font-size:.72rem;font-weight:700}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);background:#fff;border-radius:var(--radius-sm);min-height:52px;padding:12px 14px;color:var(--ink);outline:none;transition:border .18s ease,box-shadow .18s ease}.field textarea{min-height:120px;resize:vertical}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--forest);box-shadow:0 0 0 3px rgba(23,60,46,.1)}
+    .form-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:28px}.form-back{border:0;background:none;font-size:.8rem;font-weight:700;color:var(--muted);padding:10px 0}.form-back[hidden]{visibility:hidden}.form-status{font-size:.72rem;color:var(--muted);margin-top:14px}.form-success{display:none;padding:36px 0}.form-success.active{display:block}.form-success .success-mark{width:58px;height:58px;border-radius:50%;background:var(--foam);display:grid;place-items:center;font-size:1.5rem;margin-bottom:22px}.form-success h3{font-size:2rem;letter-spacing:-.04em;line-height:1.1;margin:0}.form-success p{color:var(--muted)}
+
+    /* FOOTER */
+    footer{background:#07100b;color:#fff;padding:76px 0 0;overflow:hidden}
+    .footer-grid{display:grid;grid-template-columns:1.4fr repeat(3,1fr);gap:50px;padding-bottom:70px}
+    .footer-brand p{color:rgba(255,255,255,.48);max-width:36ch;font-size:.83rem;margin-top:20px}.footer-col h4{font-size:.7rem;text-transform:uppercase;letter-spacing:.12em;color:rgba(255,255,255,.4);margin:0 0 18px}.footer-col a{display:block;font-size:.85rem;color:rgba(255,255,255,.8);margin:9px 0}.footer-col a:hover{color:var(--foam)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;gap:30px;padding:20px 0;color:rgba(255,255,255,.35);font-size:.69rem}
+    .footer-word{font-size:clamp(4.5rem,14vw,12rem);font-weight:600;letter-spacing:-.075em;line-height:.65;white-space:nowrap;color:#0f2016;text-align:center;margin-top:64px;user-select:none;transform:translateY(7px)}
+
+    @media(max-width:1050px){
+      :root{--header:70px}
+      .nav-links,.phone,.nav-actions .button{display:none}.menu-toggle{display:flex}.mobile-panel.open{display:flex}
+      .hero{min-height:auto}.hero-grid{grid-template-columns:1fr .78fr;gap:44px}.hero h1{font-size:clamp(3.3rem,7vw,5.2rem)}.hero-visual{height:570px}.hero-overlay{right:-8px}
+      .problem-head{grid-template-columns:1fr .7fr;gap:48px}.envelope-board{grid-template-columns:1.2fr .8fr;min-height:590px}.envelope-media{min-height:590px}
+      .story-grid{grid-template-columns:1fr .8fr;gap:50px}.roof-sticky{min-height:520px}
+      .applications-grid{min-height:640px}
+      .trust-grid,.faq-grid,.quote-grid{gap:70px}
+    }
+    @media(max-width:820px){
+      .hero{padding-top:calc(var(--header) + 54px)}
+      .hero-grid{grid-template-columns:1fr}.hero h1{font-size:clamp(3.4rem,13.4vw,5.8rem);max-width:9ch}.hero-lead{max-width:52ch}.hero-visual{height:600px;margin-top:10px}.hero-photo-wrap{inset:0}.foam-orbit{left:-4px}.hero-overlay{right:16px}
+      .problem-head,.story-header,.benefits-layout,.trust-grid,.process-head,.faq-grid,.quote-grid{grid-template-columns:1fr}
+      .problem-copy .section-title,.section-title,.story-header .section-title{max-width:13ch}
+      .problem-head .section-copy{margin-top:8px}.envelope-board{grid-template-columns:1fr}.envelope-media{min-height:520px}.envelope-panel{border-left:0;border-top:1px solid rgba(255,255,255,.1)}
+      .story-header .section-copy,.process-head .section-copy{margin-top:-15px}
+      .story-grid{display:block}.roof-sticky{position:relative;top:auto;min-height:490px;height:65vh;max-height:610px;margin-bottom:48px}.story-steps{padding:0}.story-step{min-height:auto;padding:46px 0}.story-step h3{max-width:16ch}
+      .benefits-layout .section-title,.faq-intro,.quote-copy{position:static}.benefit-feature{grid-template-columns:1fr}.benefit-photo{order:-1;min-height:400px}
+      .applications-head,.ba-head{align-items:start;flex-direction:column;display:flex}.applications-grid{grid-template-columns:1fr 1fr;grid-template-rows:420px 360px;min-height:auto}.app-card:first-child{grid-column:span 2;grid-row:auto}
+      .trust-row{grid-template-columns:54px 1fr}.trust-row p{grid-column:2}
+      .process-row{grid-template-columns:66px 1fr}.process-row p{grid-column:2}.process-row:hover{padding-left:0}
+      .quote-meta{max-width:none}.footer-grid{grid-template-columns:1.2fr 1fr 1fr}.footer-brand{grid-column:1/-1}
+    }
+    @media(max-width:580px){
+      body{font-size:15.5px}.container{width:calc(100% - 32px)}
+      .hero{padding-bottom:72px}.hero h1{font-size:clamp(3.25rem,17vw,4.7rem)}.hero-actions{align-items:flex-start;flex-direction:column}.microcopy{max-width:42ch}.hero-trust{display:grid;gap:12px}.hero-visual{height:510px}.hero-photo-wrap{border-radius:35% 35% 14px 14px / 18% 18% 14px 14px}.hero-overlay{left:16px;right:16px;bottom:18px;max-width:none}.foam-orbit{width:70px;height:70px;top:52px}
+      .envelope-media{min-height:430px}.envelope-thesis{left:18px;right:18px;bottom:18px;grid-template-columns:1fr}.envelope-thesis span{display:none}.envelope-panel{padding:26px 22px 22px}
+      .roof-sticky{height:520px;min-height:0}.method-topbar{left:18px;right:18px}.method-assessment{left:18px;width:calc(100% - 36px)}.method-footer{left:18px;right:18px;bottom:18px;grid-template-columns:1fr}.method-proof{justify-self:start}
+      .benefit-photo{min-height:300px}.benefit-row{grid-template-columns:36px 1fr;gap:16px}.benefit-index{width:36px;height:36px}
+      .applications-grid{display:grid;grid-template-columns:1fr;grid-template-rows:none}.app-card:first-child{grid-column:auto}.app-card{min-height:390px}.app-card-content{left:20px;right:20px;bottom:20px}
+      .trust-row{grid-template-columns:42px 1fr;gap:14px}.trust-row p{grid-column:2}.trust-section:before{width:320px;height:320px}
+      .ba-layout{grid-template-columns:1fr}.ba-card{min-height:430px}
+      .process-row{grid-template-columns:52px 1fr;gap:16px}.process-row .n{width:42px;height:42px}.process-row p{grid-column:2}
+      .faq-a p{margin-right:0}
+      .quote-meta{grid-template-columns:1fr 1fr}.quote-section:after{width:250px;height:250px;right:-110px;bottom:-140px}.form-card{border-radius:18px}.choice-grid{grid-template-columns:1fr}.form-nav .button{flex:1}
+      .footer-grid{grid-template-columns:1fr 1fr;gap:34px}.footer-brand{grid-column:1/-1}.footer-bottom{flex-direction:column;gap:6px}.footer-word{font-size:20vw;margin-top:40px}
+    }
+    @media(prefers-reduced-motion:reduce){
+      html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}.reveal{opacity:1;transform:none}.roof-sticky{height:auto;min-height:560px}.roof-sticky .method-frame--finish{opacity:1!important;transform:none!important}.roof-sticky .method-frame--existing,.roof-sticky .method-frame--install{opacity:0!important}.method-assessment{opacity:0!important}
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header" id="header">
+    <div class="container nav">
+      <a class="logo" href="#top" aria-label="ThermalForm home">
+        <span class="logo-word">THERMALFORM</span>
+        <span class="logo-sub">Building envelope systems</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#services">Services</a>
+        <a href="#why">Why spray foam</a>
+        <a href="#process">Our process</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="phone" href="tel:+353000000000">+353 (0) 00 000 0000</a>
+        <a class="button button--primary" href="#quote">Get a quote</a>
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><span></span></button>
+      </div>
+    </div>
+  </header>
+  <div class="mobile-panel" id="mobilePanel" aria-hidden="true">
+    <nav aria-label="Mobile navigation">
+      <a href="#services">Services</a>
+      <a href="#why">Why spray foam</a>
+      <a href="#process">Our process</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="mobile-panel-bottom">
+      <a class="button button--primary" href="#quote">Book a free site survey</a>
+      <a href="tel:+353000000000" style="font-size:1rem">+353 (0) 00 000 0000</a>
+    </div>
+  </div>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow reveal" data-index="00">Residential retrofit · Ireland</span>
+          <h1 class="reveal">Stop heating the gaps in your home.</h1>
+          <p class="hero-lead reveal">Professional spray foam insulation for roofs, attics and hard-to-insulate spaces — surveyed, specified and installed with ventilation and moisture management in mind.</p>
+          <div class="hero-actions reveal">
+            <a class="button button--primary" href="#quote">Book a free site survey <span aria-hidden="true">↗</span></a>
+            <span class="microcopy">No obligation. We assess the property first and recommend the right approach.</span>
+          </div>
+          <div class="hero-trust reveal" aria-label="Service highlights">
+            <span class="trust-item">Residential & commercial</span>
+            <span class="trust-item">Ireland-wide service</span>
+            <span class="trust-item">Survey before specification</span>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Spray foam being installed in an attic">
+          <div class="foam-orbit" aria-hidden="true"></div>
+          <div class="hero-photo-wrap">
+            <img class="hero-photo" src="https://businessoutstanders.s3.amazonaws.com/news/2025/7/professional-applying-spray-foam-insulation-in-attic-space.webp" alt="Installer applying spray foam insulation between roof timbers" />
+          </div>
+          <div class="hero-overlay">
+            <strong>Survey first.<br>Spray second.</strong>
+            <span>The roof build-up, substrate and ventilation strategy are considered before installation.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="problem" id="why">
+      <div class="container">
+        <div class="problem-head reveal">
+          <div class="problem-copy">
+            <span class="eyebrow" data-index="01">Building physics</span>
+            <h2 class="section-title">The weak point is rarely the middle of the insulation.</h2>
+          </div>
+          <p class="section-copy">Real performance is decided at the junctions: where the roof meets the wall, around openings, at the eaves and wherever services pass through the envelope. The goal is continuity — not simply more material.</p>
+        </div>
+        <div class="envelope-board reveal">
+          <div class="envelope-media">
+            <img class="house-photo" src="https://images.openai.com/static-rsc-4/GS04in-2IqdDeWBHAIj7ccUj3PXL9Vde6RQqtC-0XsK73k3m28j8vMXILCw8nm6SrnbMs3arNgHY4ediEqgnJgd24G5Lm-I2sVFhc0NyeQ54AvAD64dt1hBbew_uI2LzVPOsIcY95J-7kOhbmeeWq9Da2vwH-kaTrNgoXTYO2wXe5AimtM0DVfvycNKgZxmn?purpose=fullsize" alt="Contemporary detached Irish home used to illustrate the building envelope" />
+            <div class="media-index">Existing building · envelope context</div>
+            <div class="envelope-thesis"><strong>Think in continuous boundaries, not isolated products.</strong><span>Potential weak points are explained separately rather than pretending to map hidden heat loss onto a photograph.</span></div>
+          </div>
+          <aside class="envelope-panel" aria-label="Typical continuity weak points">
+            <div>
+              <div class="envelope-panel-head"><small>Typical weak p
