@@ -1,0 +1,25 @@
+ntById('roofCaption');
+    const methodTitle=document.getElementById('methodTitle');
+    const stageCopy={
+      1:['01 / Existing condition','Read the existing condition.','Start with what is physically there: construction, access, visible condition and existing insulation.'],
+      2:['02 / Assessment','Resolve the detail before the material.','The visual stays on the existing roof because this stage is assessment: roof build-up, ventilation, moisture strategy and preparation are reviewed before application.'],
+      3:['03 / Application','Install to the agreed scope.','The visual changes to actual application only when the narrative reaches installation.'],
+      4:['04 / Finished layer','Check the completed result.','The final state shows the insulated roof space rather than a simulated layer drawn over an unrelated diagram.']
+    };
+    const setStage=(s)=>{roof.dataset.stage=s;stageLabel.textContent=stageCopy[s][0];methodTitle.textContent=stageCopy[s][1];roofCaption.textContent=stageCopy[s][2]};
+    if(!reduced){
+      const stepObserver=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)setStage(e.target.dataset.stage)}),{threshold:.55,rootMargin:'-15% 0px -20% 0px'});
+      document.querySelectorAll('.story-step').forEach(s=>stepObserver.observe(s));
+    } else setStage('4')
+
+    document.querySelectorAll('.faq-q').forEach(btn=>btn.addEventListener('click',()=>{const item=btn.closest('.faq-item');const open=btn.getAttribute('aria-expanded')==='true';document.querySelectorAll('.faq-item').forEach(other=>{if(other!==item){other.classList.remove('open');other.querySelector('.faq-q').setAttribute('aria-expanded','false')}});item.classList.toggle('open',!open);btn.setAttribute('aria-expanded',String(!open))}));
+
+    const form=document.getElementById('quoteForm'), steps=[...document.querySelectorAll('.form-step')], bars=[...document.querySelectorAll('.form-progress span')], next=document.getElementById('formNext'), back=document.getElementById('formBack'), status=document.getElementById('formStatus');
+    let current=0;
+    const updateForm=()=>{steps.forEach((s,i)=>s.classList.toggle('active',i===current));bars.forEach((b,i)=>b.classList.toggle('active',i<=current));back.hidden=current===0;next.innerHTML=current===steps.length-1?'Request my site survey <span>↗</span>':'Continue <span>→</span>';status.textContent='No payment or commitment. This prototype form does not send data.'};
+    const validateStep=()=>{const step=steps[current]; if(current===0){if(!step.querySelector('input[name="area"]:checked')){status.textContent='Choose one option to continue.';return false}} else {for(const field of step.querySelectorAll('[required]')){if(!field.value.trim()){field.focus();status.textContent='Please complete the highlighted field before continuing.';return false} if(field.type==='email'&&!field.validity.valid){field.focus();status.textContent='Enter a valid email address.';return false}}} return true};
+    next.addEventListener('click',()=>{if(!validateStep())return;if(current<steps.length-1){current++;updateForm();steps[current].querySelector('input,select,textarea')?.focus({preventScroll:true})}else{form.style.display='none';document.querySelector('.form-progress').style.display='none';document.getElementById('formSuccess').classList.add('active')}});
+    back.addEventListener('click',()=>{if(current>0){current--;updateForm()}});
+  </script>
+</body>
+</html>
