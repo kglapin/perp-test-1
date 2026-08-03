@@ -1,0 +1,15 @@
+.scenarios__grid{align-items:stretch}
+.scenario{display:grid;grid-template-rows:260px 44px 86px 184px minmax(168px,1fr);align-content:stretch;min-width:0}
+.scenario__media{grid-row:1;height:100%!important;margin:0!important;min-width:0;overflow:hidden;font-size:0;color:transparent;line-height:0}
+.scenario__media img{display:block;width:100%;height:100%;object-fit:cover;font-size:0;color:transparent}
+.scenario__tag{grid-row:2;display:flex;align-items:flex-end;margin:0!important;padding:16px 0 0;min-height:0;line-height:1.25}
+.scenario h3{grid-row:3;display:flex;align-items:flex-start;margin:0!important;padding:10px 0 16px;min-height:0}
+.scenario__meta{grid-row:4;margin:0!important;padding:0!important;border-top:1px solid #d8d4cb!important;display:grid!important;grid-template-rows:repeat(3,1fr);gap:0!important;min-height:0}
+.scenario__meta div{display:grid!important;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);align-items:center;gap:16px!important;min-height:0;padding:0;border-bottom:1px solid rgba(216,212,203,.62)}
+.scenario__meta div:last-child{border-bottom:0}
+.scenario__meta span,.scenario__meta strong{min-width:0;overflow-wrap:anywhere}
+.scenario__meta strong{text-align:right}
+.scenario__decision{grid-row:5;margin:0!important;padding:20px 0 0!important;border-top:1px solid #d8d4cb;align-self:stretch;min-height:0}
+.scenario__decision b{display:block;min-height:22px;margin:0 0 8px!important}
+@media(max-width:900px){.scenario,.scenario:first-child,.scenario:last-child{display:block;min-height:0}.scenario__media{height:360px!important;margin-bottom:24px!important}.scenario__tag{display:block;padding:0;margin-bottom:10px!important}.scenario h3{display:block;padding:0;margin:0 0 18px!important}.scenario__meta{display:grid!important;grid-template-rows:none;gap:0!important;margin:0!important;padding:0!important}.scenario__meta div{min-height:52px}.scenario__decision{margin-top:18px!important;padding-top:18px!important}}
+@media(max-width:580px){.scenario__media{height:260px!important}.scenario__meta div{grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);min-height:50px;gap:12px!important}.scenario__decision b{min-height:0}}
