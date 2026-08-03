@@ -30,3 +30,19 @@
   renumberKickers();
   requestAnimationFrame(renumberKickers);
 })();
+
+(()=>{
+  if(!document.querySelector('link[data-hero-ripple]')){
+    const link=document.createElement('link');
+    link.rel='stylesheet';
+    link.href='hero-ripple.css?v=2';
+    link.dataset.heroRipple='true';
+    document.head.appendChild(link);
+  }
+  if(!document.querySelector('script[data-hero-ripple]')){
+    const script=document.createElement('script');
+    script.src='hero-ripple.js?v=2';
+    script.dataset.heroRipple='true';
+    document.body.appendChild(script);
+  }
+})();
