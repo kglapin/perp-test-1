@@ -1,0 +1,139 @@
+oints</small><h3>Where continuity needs attention.</h3></div>
+              <div class="envelope-list">
+                <div class="envelope-point"><b>01</b><div><strong>Roof junctions</strong><p>Transitions between insulation planes need a resolved detail.</p></div></div>
+                <div class="envelope-point"><b>02</b><div><strong>Eaves</strong><p>Tight geometry can make consistent installation more difficult.</p></div></div>
+                <div class="envelope-point"><b>03</b><div><strong>Openings</strong><p>Hatches, frames and edges interrupt an otherwise continuous layer.</p></div></div>
+                <div class="envelope-point"><b>04</b><div><strong>Service penetrations</strong><p>Pipes, cables and ducts create small but important discontinuities.</p></div></div>
+              </div>
+            </div>
+            <p class="envelope-note">A site survey determines which details are relevant to a specific property. A website should not imply a diagnosis from a contextual photograph.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="story-section" id="services">
+      <div class="container">
+        <div class="story-header reveal">
+          <div>
+            <span class="eyebrow" data-index="02">Installation method</span>
+            <h2 class="section-title">The finished layer is the last step, not the first.</h2>
+          </div>
+          <p class="section-copy">The sequence now uses real project imagery rather than an invented roof diagram. Each visual state corresponds directly to the decision described beside it: existing condition, assessment, application and finished layer.</p>
+        </div>
+        <div class="story-grid">
+          <div class="roof-sticky reveal" id="roofSticky" data-stage="1">
+            <div class="method-topbar"><span>Site method</span><span class="stage-count" id="stageLabel">01 / Existing condition</span></div>
+            <div class="method-media" aria-hidden="true">
+              <figure class="method-frame method-frame--existing"><img src="https://images.openai.com/static-rsc-4/cMcgBzbVS4z-IPe7sk39jR0Rzj7zliL7CqQYkKczFbGXOPlw2wrCq1zjeNWOnKuhxPoYiJ49b4bIYKh_kaUD_H64KqfE7addkfrYuAtmK66qJZ4T5mPLS5sjY8_g5yRHXsZA2H9vS2m2ZZmAWPewCWUbCzhGwvUdxo9WEQt13UfNiiEYKPF-AhFvFw8S-zCD?purpose=fullsize" alt=""></figure>
+              <figure class="method-frame method-frame--install"><img src="https://businessoutstanders.s3.amazonaws.com/news/2025/7/professional-applying-spray-foam-insulation-in-attic-space.webp" alt=""></figure>
+              <figure class="method-frame method-frame--finish"><img src="https://images.openai.com/static-rsc-4/sd8LAmNbFsZ3svXy32hQ9WCTZsteASYVKSQZvrcPEgJHopf11j-5qHzk6HpgMOgkYbuUymPpjxJJFNqjIs45KJ673pqbryMVEBUsY5GyIZ0isYeretQGXnPX84gemg6r-VrN0LYAiJ8v8cVh0doXd_jqm_pEeVvRK-pEkepTdVt83ntBxjZ9-I9TOX3OT1YD?purpose=fullsize" alt=""></figure>
+            </div>
+            <div class="method-assessment" aria-hidden="true">
+              <div class="assessment-row"><b>A</b><span>Roof build-up and substrate condition reviewed</span></div>
+              <div class="assessment-row"><b>B</b><span>Ventilation and moisture strategy checked</span></div>
+              <div class="assessment-row"><b>C</b><span>Access, preparation and application scope confirmed</span></div>
+            </div>
+            <div class="method-footer">
+              <div class="method-copy"><strong id="methodTitle">Read the existing condition.</strong><p id="roofCaption">The first visual is the building before intervention. No synthetic geometry is added to imply information we do not have.</p></div>
+              <span class="method-proof">Photo-led sequence</span>
+            </div>
+          </div>
+          <div class="story-steps" id="storySteps">
+            <article class="story-step" data-stage="1">
+              <span class="step-num">01 — INSPECT</span>
+              <h3>First, understand the roof.</h3>
+              <p>We inspect the roof build-up, substrate condition, existing insulation, access and visible moisture issues before specifying the system.</p>
+              <span class="step-note">No specification before assessment</span>
+            </article>
+            <article class="story-step" data-stage="2">
+              <span class="step-num">02 — VENTILATE</span>
+              <h3>Protect the ventilation path.</h3>
+              <p>Where the roof construction requires a ventilation path, it must remain continuous and correctly detailed. Insulation should never mean ignoring moisture management.</p>
+              <span class="step-note">Ventilation is treated as part of the detail</span>
+            </article>
+            <article class="story-step" data-stage="3">
+              <span class="step-num">03 — SPECIFY</span>
+              <h3>Match the system to the build-up.</h3>
+              <p>Foam type, target thickness and installation detail are selected around the property rather than forcing the same detail into every roof.</p>
+              <span class="step-note">Application-specific specification</span>
+            </article>
+            <article class="story-step" data-stage="4">
+              <span class="step-num">04 — INSTALL</span>
+              <h3>Then create the insulation layer.</h3>
+              <p>The prepared area is sprayed systematically so the insulation expands into the designated space and forms a consistent layer across complex junctions.</p>
+              <span class="step-note">Controlled, documented installation</span>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits">
+      <div class="container benefits-layout">
+        <div class="reveal">
+          <span class="eyebrow" data-index="03">Material behaviour</span>
+          <h2 class="section-title">Designed for the difficult parts.</h2>
+        </div>
+        <div>
+          <div class="benefit-feature reveal">
+            <div>
+              <h3>A more continuous thermal layer.</h3>
+              <p>Spray foam follows the geometry of the prepared space rather than relying entirely on pre-cut insulation fitting perfectly at every junction.</p>
+            </div>
+            <img class="benefit-photo" src="https://images.openai.com/static-rsc-4/sd8LAmNbFsZ3svXy32hQ9WCTZsteASYVKSQZvrcPEgJHopf11j-5qHzk6HpgMOgkYbuUymPpjxJJFNqjIs45KJ673pqbryMVEBUsY5GyIZ0isYeretQGXnPX84gemg6r-VrN0LYAiJ8v8cVh0doXd_jqm_pEeVvRK-pEkepTdVt83ntBxjZ9-I9TOX3OT1YD?purpose=fullsize" alt="Detailed spray foam insulation around timber framing" />
+          </div>
+          <div class="benefit-list">
+            <div class="benefit-row reveal"><span class="benefit-index">01</span><div><h4>Reaches awkward spaces</h4><p>Useful around irregular geometry and areas that are difficult to insulate cleanly with rigid, pre-cut materials.</p></div></div>
+            <div class="benefit-row reveal"><span class="benefit-index">02</span><div><h4>Helps control unwanted air movement</h4><p>A correctly specified installation can contribute to a tighter, more consistent building envelope.</p></div></div>
+            <div class="benefit-row reveal"><span class="benefit-index">03</span><div><h4>Installed in place</h4><p>The material expands within the intended zone, reducing the number of joints within the insulated area.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="applications">
+      <div class="container">
+        <div class="applications-head reveal">
+          <div><span class="eyebrow" data-index="04">Applications</span><h2 class="section-title">One material. Different building problems.</h2></div>
+          <p class="section-copy">Suitability is confirmed during the site assessment. The same insulation detail should not be assumed for every building.</p>
+        </div>
+        <div class="applications-grid">
+          <article class="app-card reveal">
+            <img src="https://images.openai.com/static-rsc-4/sd8LAmNbFsZ3svXy32hQ9WCTZsteASYVKSQZvrcPEgJHopf11j-5qHzk6HpgMOgkYbuUymPpjxJJFNqjIs45KJ673pqbryMVEBUsY5GyIZ0isYeretQGXnPX84gemg6r-VrN0LYAiJ8v8cVh0doXd_jqm_pEeVvRK-pEkepTdVt83ntBxjZ9-I9TOX3OT1YD?purpose=fullsize" alt="Pitched roof with spray foam insulation between timber rafters" />
+            <div class="app-card-content"><small>01 · Residential</small><h3>Pitched roofs & attics</h3><p>Upgrade difficult roof spaces with an insulation system specified around the existing construction.</p></div>
+          </article>
+          <article class="app-card reveal">
+            <img src="https://images.openai.com/static-rsc-4/GS04in-2IqdDeWBHAIj7ccUj3PXL9Vde6RQqtC-0XsK73k3m28j8vMXILCw8nm6SrnbMs3arNgHY4ediEqgnJgd24G5Lm-I2sVFhc0NyeQ54AvAD64dt1hBbew_uI2LzVPOsIcY95J-7kOhbmeeWq9Da2vwH-kaTrNgoXTYO2wXe5AimtM0DVfvycNKgZxmn?purpose=fullsize" alt="Modern Irish detached house" />
+            <div class="app-card-content"><small>02 · New build</small><h3>Timber frame & complex details</h3><p>Create a consistent insulation layer around junctions and framed construction.</p></div>
+          </article>
+          <article class="app-card reveal">
+            <img src="https://businessoutstanders.s3.amazonaws.com/news/2025/7/professional-applying-spray-foam-insulation-in-attic-space.webp" alt="Professional spray foam insulation installation" />
+            <div class="app-card-content"><small>03 · Larger projects</small><h3>Commercial & agricultural</h3><p>Project-specific insulation solutions for larger building-envelope applications.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="trust-section">
+      <div class="container trust-grid">
+        <div class="reveal">
+          <span class="eyebrow eyebrow--light" data-index="05">Quality control</span>
+          <h2 class="section-title">Good installation starts before the trigger is pulled.</h2>
+          <p class="section-copy">We do not treat every roof as the same roof. The process is structured around understanding the building first.</p>
+        </div>
+        <div class="trust-list">
+          <div class="trust-row reveal"><span class="n">01</span><h3>Building assessment</h3><p>Roof construction, access and visible existing conditions are checked before a recommendation is made.</p></div>
+          <div class="trust-row reveal"><span class="n">02</span><h3>Ventilation strategy</h3><p>Required airflow paths and detailing are identified before insulation is installed.</p></div>
+          <div class="trust-row reveal"><span class="n">03</span><h3>Product specification</h3><p>Insulation type and target installation depth are matched to the application and product system.</p></div>
+          <div class="trust-row reveal"><span class="n">04</span><h3>Controlled installation</h3><p>Surfaces are prepared and protected, then the designated area is sprayed systematically.</p></div>
+          <div class="trust-row reveal"><span class="n">05</span><h3>Project handover</h3><p>The finished work is checked and relevant project information is handed over to the client.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ba-section">
+      <div class="container">
+        <div class="ba-head reveal"><div><span class="eyebrow" data-index="06">Existing / insulated</span><h2 class="section-title">See what changes when the gaps disappear.</h2></div><p class="section-copy">A visual comparison makes the role of a continuous insulation layer easier to understand than another list of generic benefits.</p></div>
+        <div class="ba-layout">
+          <div class="ba-card reveal"><img src="https://images.openai.com/static-rsc-4/cMcgBzbVS4z-IPe7sk39jR0Rzj7zliL7CqQYkKczFbGXOPlw2wrCq1zjeNWOnKuhxPoYiJ49b4bIYKh_kaUD_H64KqfE7addkfrYuAtmK66qJZ4T5mPLS5sjY8_g5yRHXsZA2H9vS2m2ZZmAWPewCWUbCzhGwvUdxo9WEQt13UfNiiEYKPF-AhFvFw8S-zCD?purpose=fullsize" alt="Attic before spray foam insulation" /><span class="ba-label">Before</span><div class="ba-points"><span>Exposed roof structure</s
